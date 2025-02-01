@@ -1,0 +1,17 @@
+if ADV360PRO_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "adv360pro"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if ADV360PRO_LEFT || ADV360PRO_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
